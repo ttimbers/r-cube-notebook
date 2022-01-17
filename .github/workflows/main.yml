@@ -14,7 +14,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git pull origin main
-          curl -o cube.r https://raw.githubusercontent.com/ttimbers/r-cube-commit-source/main/cube.r
+          curl -o cube.ipynb https://raw.githubusercontent.com/ttimbers/r-cube-commit-source/main/cube.ipynb
           git commit -m "Here's a fix to the file!" -a
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
