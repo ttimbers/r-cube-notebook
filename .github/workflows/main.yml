@@ -1,10 +1,10 @@
-on: 
-  push:
-    branches: make-conflict
+on:
+  workflow_dispatch:
 
 jobs:
   createConflict:
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - uses: actions/checkout@v2
         with:
